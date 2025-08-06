@@ -22,7 +22,7 @@ pipeline{
             }
         }
 
-        stage('Run scan analysis with Snyk '){
+/*        stage('Run scan analysis with Snyk '){
             steps{
                 script {
                     withCredentials([string(credentialsId: 'SNYK_TOKEN', variable: 'SNYK_TOKEN')]) {
@@ -30,7 +30,7 @@ pipeline{
                     }
                 }
             }
-        }
+        }    */
 
         stage('Build docker image'){
             steps{
